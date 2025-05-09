@@ -1,0 +1,95 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* El body ocupa el 100% de la pantalla y usa Flexbox para centrar */
+body {
+    display: flex;
+    justify-content: center;   /* Centrado horizontal */
+    align-items: center;       /* Centrado vertical */
+    min-height: 100vh;         /* Ocupa el 100% de la altura de la pantalla */
+    background-color: rgb(255, 181, 224);  /* Fondo rosa */
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;          /* Evita el scroll si se pasa del tamaño */
+}
+
+/* Contenedor de la carta */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo del card (hoja de carta) */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+    margin: auto;              /* Esto fuerza el centrado horizontal */
+}
+
+/* Título de la carta */
+.card h2 {
+    margin-bottom: 15px;
+    color: #ff94c2;
+    text-align: center;
+}
+
+/* Contenido de la carta */
+.content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.card-image {
+    width: 100%;
+    max-width: 150px; /* Máximo ancho de la imagen */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+    .card-image {
+        max-width: 100%;
+    }
+}
+p{
+    font-size: 16px;
+    text-align: justify;
+}
+.image-buttonback{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s;  
+}
+.image {
+    width: 100%;
+    max-width: 30px; /* Tamaño máximo del botón */
+    height: auto;     /* Se adapta proporcionalmente */
+}

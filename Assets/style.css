@@ -1,0 +1,38 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    background-color: rgb(255, 181, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la pantalla */
+}
+
+/* Contenedor del botón */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del botón */
+.image-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s;
+}
+
+/* Efecto al pasar el ratón */
+.image-button:hover {
+    transform: scale(1.05); /* Un poquito de zoom */
+}
+
+/* Imagen responsive */
+.image {
+    width: 100%;
+    max-width: 300px; /* Tamaño máximo del botón */
+    height: auto;     /* Se adapta proporcionalmente */
+    border-radius: 15px;
+}
